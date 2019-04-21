@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+typedef struct process
+{
+ int id,at,bt,st,pr;
+ float wt,tat;
+}process;
+
+process p[10],p1[10],temp;
+queue<int> q1;
+
+int accept(int ch);
+void turnwait(int n);
+void display(int n);
+void ganttrr(int n);
+
+int main()
+{
+ int i,n,ts,ch,j,x;
+ p[0].tat=0;
+ p[0].wt=0;
+ n=accept(ch);
+ ganttrr(n);
+ turnwait(n);
+ display(n);
+ return 0;
+}
