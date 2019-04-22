@@ -1,0 +1,25 @@
+int accept(int ch)
+{
+ int i,n;
+ printf("\nEnter the no. of process: ");
+ scanf("%d",&n);
+ if(n==0)
+ {
+  printf("\nInvalid no. of process");
+  exit(1);
+ }
+ for(i=1;i<=n;i++)
+ {
+  printf("\nEnter the arrival time for process P%d: ",i);
+  scanf("%d",&p[i].at);
+  p[i].id=i;
+ }
+ for(i=1;i<=n;i++)
+ {
+  printf("\nEnter the burst time for process P%d: ",i);
+  scanf("%d",&p[i].bt);
+ } 
+ for(i=1;i<=n;i++)
+  p1[i]=p[i];
+ return n;
+}
